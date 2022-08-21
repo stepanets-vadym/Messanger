@@ -27,7 +27,7 @@ function Messanger() {
   const [userId, setUserId] = useState(0);
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch('https://localmessenger.herokuapp.com/api/users')
       .then((response) => response.json())
       .then((users) =>
         setUsers(

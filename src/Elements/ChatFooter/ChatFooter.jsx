@@ -36,7 +36,7 @@ const ChatFooter = ({ userChatInfo, setUserChatInfo, users, setUsers }) => {
       };
 
       // console.log(newUserChatInfo(message, 'ans'));
-      fetch(`http://localhost:3000/users/${userChatInfo.id}`, {
+      fetch(`https://localmessenger.herokuapp.com/api/users/${userChatInfo.id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json',
@@ -53,7 +53,7 @@ const ChatFooter = ({ userChatInfo, setUserChatInfo, users, setUsers }) => {
               .then((response) => response.json())
               .then((randomJson) => {
                 if (randomJson) {
-                  fetch(`http://localhost:3000/users/${userChatInfo.id}`, {
+                  fetch(`https://localmessenger.herokuapp.com/api/users/${userChatInfo.id}`, {
                     method: 'PUT',
                     headers: {
                       'Content-type': 'application/json',
