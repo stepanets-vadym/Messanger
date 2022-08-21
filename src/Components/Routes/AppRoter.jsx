@@ -6,7 +6,8 @@ import { Context } from 'index';
 
 function AppRoter() {
   const { auth } = useContext(Context);
-  const [user] = useAuthState(auth);
+  // const [user] = useAuthState(auth);
+  const user = true
   // console.log(user);
   return user ? (
     <Routes>

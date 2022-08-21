@@ -6,7 +6,7 @@ import App from './App';
 import { app, firebaseConfig } from './firebase';
 
 export const Context = createContext(null);
-const auth = getAuth();
+const auth = getAuth(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

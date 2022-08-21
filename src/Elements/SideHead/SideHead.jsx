@@ -26,9 +26,9 @@ const SideHead = ({ setSearchQuery, searchQuery, searchMes, setSearchMes }) => {
       <div className={styles.personBlock}>
         <div className={styles.personInfo}>
           <div className={styles.personImg}>
-            <img className={styles.photo} src={user.photoURL} alt='Person' />
+            <img className={styles.photo} src={MeAndSnow} alt='Person' />
           </div>
-          <div className={styles.personName}>{user.displayName}</div>
+          <div className={styles.personName}>Vadym Stepanets</div>
         </div>
         <button className={styles.exit} onClick={() => signOut(auth)}>
           <Icon name={'#icon-exit'} />
