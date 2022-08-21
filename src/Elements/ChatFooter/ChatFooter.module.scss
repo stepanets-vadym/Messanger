@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.ChatFooter {
+  background-color: $c-Cultured;
+  padding: 30px 20px;
+}
+
+.footerLabel {
+  position: relative;
+}
+
+.input{
+  border: 1px solid $c-CharlestonGreen;
+  padding-right: 50px;
+  border-radius: 25px;
+  outline: none;
+}
+
+
+.icon {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: $fs-24 + px;
+  @include flexCenter;
+  position: absolute;
+  padding: 5px;
+  right: 24px;
+  top: -5px;
+
+}

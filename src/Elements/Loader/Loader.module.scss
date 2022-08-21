@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 900;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  position: fixed;
+  align-items: center;
+  transition: $t-normal;
+  justify-content: center;
+  background-color: $c-CharlestonGreen;
+}
+
+.content {
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: $c-white;
+  margin: 0 auto;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  width: 400px;
+}
+
+
+.ldsDualRing {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.ldsDualRing:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

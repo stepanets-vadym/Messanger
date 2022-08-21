@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.SideHead {
+  border-bottom: 1px solid $c-CharlestonGreen;
+  background-color: $c-Cultured;
+  flex-direction: column;
+  padding: 20px 10px;
+  display: flex;
+}
+
+.personBlock {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personInfo {
+  align-items: center;
+  margin-right: 5px;
+  display: flex;
+}
+
+.personImg {
+  @include flexCenter;
+  margin-right: 20px;
+  max-width: 50px;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.search {
+  position: relative;
+  margin-right: 5px;
+  width: 100%;
+}
+
+.searchInput {
+  border: 1px solid $c-CharlestonGreen;
+  border-radius: 25px;
+  padding-left: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.icon {
+  pointer-events: none;
+  @include flexCenter;
+  position: absolute;
+  font-size: 18px;
+  top: 18px;
+  left: 16px;
+}
+
+.exit {
+  background-color: transparent;
+  border: 1px solid transparent;
+  @include flexCenter;
+  padding: 5px;
+  font-size: 26px;
+}
+
+.searchBlock {
+  display: flex;
+}
+
+.btn {
+  border: 1px solid $c-black;
+  background: transparent;
+  font-size: $fs-24 + px;
+  @include flexCenter;
+  border-radius: 25px;
+  padding: 5px;
+}

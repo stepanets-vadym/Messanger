@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.SideContact {
+  height: calc(100vh - 180px);
+  flex-direction: column;
+  padding: 20px 10px;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+}
+
+.title {
+  font-size: $fs-h2 + px;
+  padding: 20px 0;
+  color: $c-Cyan;
+}
+
+.contactBlock {
+  background-color: $c-white;
+  padding: 10px 2px 0px 2px;
+  position: relative;
+}

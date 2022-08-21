@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.Sidebar {
+  border-right: 2px solid $c-CharlestonGreen;
+  transition: $t-normal;
+  width: 500px;
+  height: 100%;
+  @include media('<=desktop') {
+    width: 50px;
+  }
+}
+
+.showSideBar {
+  background-color: $c-white;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+  
+  @include media('<=tablet') {
+    width: 480px;
+  }
+  @include media('<=phone') {
+    width: 320px;
+  }
+}
+
+.sideBarContent {
+  @include media('<=desktop') {
+    display: none;
+  }
+}
+
+.showSideBarContetn {
+  display: block;
+}
+
+.burger {
+  transition: $t-normal;
+  display: none;
+
+  @include media('<=desktop') {
+    @include flexCenter;
+    font-size: 34px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+.closeBurger {
+  display: none;
+}

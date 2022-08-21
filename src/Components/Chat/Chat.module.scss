@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.Chat{
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+
+}

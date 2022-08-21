@@ -1,0 +1,8 @@
+@import '../mixins';
+@import '../variables';
+@import '../media';
+.container {
+  @include maxCentered(1580);
+  padding-left: 10px;
+  padding-right: 10px;
+}

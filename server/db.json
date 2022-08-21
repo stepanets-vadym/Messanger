@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Vadym Stepanets",
+      "photo": "https://t4.ftcdn.net/jpg/02/23/50/73/360_F_223507349_F5RFU3kL6eMt5LijOaMbWLeHUTv165CB.jpg",
+      "messages": [
+        {
+          "id": 22,
+          "type": "mes",
+          "text": "hello my name is Vadym",
+          "date": "Sat Aug 17 2022"
+        },
+        {
+          "id": 36,
+          "type": "ans",
+          "text": "hello",
+          "date": "Sat Aug 18 2022"
+        },
+        {
+          "id": 44,
+          "type": "mes",
+          "text": "how are you today?",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 58,
+          "type": "ans",
+          "text": "i'm fine",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 66,
+          "type": "mes",
+          "text": "how about a joke?",
+          "date": "Sat Aug 20 2022"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Alina Groom",
+      "photo": "https://t4.ftcdn.net/jpg/02/23/50/73/360_F_223507349_F5RFU3kL6eMt5LijOaMbWLeHUTv165CB.jpg",
+      "messages": [
+        {
+          "id": 23,
+          "type": "mes",
+          "text": "hello my name is Alina",
+          "date": "Sat Aug 17 2022"
+        },
+        {
+          "id": 35,
+          "type": "ans",
+          "text": "hello",
+          "date": "Sat Aug 18 2022"
+        },
+        {
+          "id": 45,
+          "type": "mes",
+          "text": "how are you today?",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 57,
+          "type": "ans",
+          "text": "i'm fine",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 67,
+          "type": "mes",
+          "text": "choose a topic for conversation",
+          "date": "Sat Aug 20 2022"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "David Smith",
+      "photo": "https://t4.ftcdn.net/jpg/02/23/50/73/360_F_223507349_F5RFU3kL6eMt5LijOaMbWLeHUTv165CB.jpg",
+      "messages": [
+        {
+          "id": 24,
+          "type": "mes",
+          "text": "hello my name is David",
+          "date": "Sat Aug 17 2022"
+        },
+        {
+          "id": 34,
+          "type": "ans",
+          "text": "hello",
+          "date": "Sat Aug 18 2022"
+        },
+        {
+          "id": 46,
+          "type": "mes",
+          "text": "how are you today?",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 56,
+          "type": "ans",
+          "text": "i'm fine",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 68,
+          "type": "mes",
+          "text": "How can I help you?",
+          "date": "Sat Aug 20 2022"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Paulo Kin",
+      "photo": "https://t4.ftcdn.net/jpg/02/23/50/73/360_F_223507349_F5RFU3kL6eMt5LijOaMbWLeHUTv165CB.jpg",
+      "messages": [
+        {
+          "id": 25,
+          "type": "mes",
+          "text": "hello my name is Paulo",
+          "date": "Sat Aug 17 2022"
+        },
+        {
+          "id": 33,
+          "type": "ans",
+          "text": "hello",
+          "date": "Sat Aug 18 2022"
+        },
+        {
+          "id": 47,
+          "type": "mes",
+          "text": "how are you today?",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 55,
+          "type": "ans",
+          "text": "i'm fine",
+          "date": "Sat Aug 19 2022"
+        },
+        {
+          "id": 69,
+          "type": "mes",
+          "text": "let's talk about something.",
+          "date": "Sat Aug 20 2022"
+        }
+      ]
+    }
+  ]
+}

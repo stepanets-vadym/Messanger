@@ -1,0 +1,31 @@
+// COLORS
+$c-black: #000000;
+$c-white: #fff;
+
+// Light
+$c-Deep-Carrot-Orange-darck: #dd6831;
+$c-Cultured: #f6f6f6;
+
+// Dark
+$c-CharlestonGreen: #292929;
+$c-HarvestGold: #e29500;
+$c-Cyan: #00c1ec;
+
+// Font
+$f-OpenSans: 'Open Sans', sans-serif;
+
+// Font size
+$fs-base: 16;
+$fs-h1: 72;
+$fs-h2: 48;
+$fs-24: 24;
+$fs-text: 18;
+
+// Letter spacing
+$ls-base: 2;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-black, 0.1);

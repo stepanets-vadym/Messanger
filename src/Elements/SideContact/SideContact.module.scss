@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+.SideContact {
+  border: 1px solid transparent;
+  transition: $t-normal;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  &:hover {
+    background-color: $c-Cultured;
+    border: 1px solid $c-black;
+  }
+}
+
+.personImg {
+  @include flexCenter;
+  margin-right: 20px;
+  max-width: 80px;
+  @include media('<=phone') {
+    margin-right: 5px;
+    max-width: 40px;
+  }
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.ContactInfo {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.info {
+  flex-direction: column;
+  display: flex;
+}
+
+.name {
+  margin-bottom: 4px;
+}
+
+.lastMessage {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 234px;
+  @include media('<=phone') {
+    max-width: 170px;
+    font-size: 14px;
+  }
+}
+
+.date {
+  max-width: 86px;
+  text-overflow: ellipsis;
+  height: 20px;
+  overflow: hidden;
+  @include media('<=phone') {
+    max-width: 60px;
+    font-size: 12px;
+  }
+}
