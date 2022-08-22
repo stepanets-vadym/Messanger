@@ -13,6 +13,7 @@ import AppRoter from 'Components/Routes/AppRoter';
 // Style
 import './styles/index.scss';
 import Loader from 'Elements/Loader/Loader';
+import Messanger from 'Pages/Messanger';
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
     <div className='App'>
       {/* SVG */}
       <Sprite />
-      <AppRoter/>
+      {/* <AppRoter/> */}
+      <Messanger/>
     </div>
   );
 }
