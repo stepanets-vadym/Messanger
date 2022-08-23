@@ -34,4 +34,8 @@
   border: none;
   padding: 5px;
 
+  @include media('>=desktop') {
+      display: none;
+    }
+
 }
