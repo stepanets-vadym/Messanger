@@ -51,7 +51,7 @@
   overflow: hidden;
   max-width: 234px;
   @include media('<=phone') {
-    max-width: 170px;
+    max-width: 160px;
     font-size: 14px;
   }
 }

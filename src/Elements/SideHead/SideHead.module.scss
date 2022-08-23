@@ -53,16 +53,18 @@
   @include flexCenter;
   position: absolute;
   font-size: 18px;
-  top: 18px;
+  color: $c-black;
   left: 16px;
+  top: 18px;
 }
 
 .exit {
   background-color: transparent;
   border: 1px solid transparent;
   @include flexCenter;
-  padding: 5px;
+  color: $c-black;
   font-size: 26px;
+  padding: 5px;
 }
 
 .searchBlock {
@@ -75,5 +77,6 @@
   font-size: $fs-24 + px;
   @include flexCenter;
   border-radius: 25px;
+  color: $c-black;
   padding: 5px;
 }

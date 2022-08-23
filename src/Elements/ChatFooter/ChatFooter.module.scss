@@ -25,6 +25,7 @@
   font-size: $fs-24 + px;
   @include flexCenter;
   position: absolute;
+  color: $c-black;
   padding: 5px;
   right: 24px;
   top: -5px;

@@ -9,6 +9,8 @@
   height: 100%;
   @include media('<=desktop') {
     width: 50px;
+    padding-right:3px;
+    padding-left:3px;
   }
 }
 
@@ -20,6 +22,7 @@
   
   @include media('<=tablet') {
     width: 480px;
+    
   }
   @include media('<=phone') {
     width: 320px;
@@ -38,6 +41,7 @@
 
 .burger {
   transition: $t-normal;
+  color: $c-black;
   display: none;
 
   @include media('<=desktop') {
