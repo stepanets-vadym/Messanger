@@ -1,8 +1,11 @@
 // React
+
+
 // Components & elements
 import ChatContent from 'Elements/ChatContent/ChatContent';
 import ChatFooter from 'Elements/ChatFooter/ChatFooter';
 import ChatHead from 'Elements/ChatHead/ChatHead';
+import ChatPlaceholder from 'Elements/ChatPlaceholder/ChatPlaceholder';
 
 // Styles
 
@@ -17,15 +20,16 @@ const Chat = ({
   setShowMenu,
   users,
   setUsers,
+  setClick
 }) => {
 
 
   return (
     // Chat
 
-    <div className={styles.Chat} onClick={() => setShowMenu(false)}>
+    <div className={styles.ChatWindow}>
       {userChatInfo ? (
-        <>
+        <div className={styles.Chat} onClick={() => setShowMenu(false)} >
           <ChatHead userChatInfo={userChatInfo} />
           <ChatContent userChatInfo={userChatInfo} />
           <ChatFooter
@@ -37,8 +41,8 @@ const Chat = ({
             setUsers={setUsers}
             users={users}
           />
-        </>
-      ) : null}
+        </div>
+      ) : <ChatPlaceholder setShowMenu={setShowMenu} setClick={setClick}/>}
     </div>
   );
 };

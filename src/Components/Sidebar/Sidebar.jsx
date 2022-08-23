@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import Icon from 'Elements/icon/Icon';
 import SideContacts from 'Elements/SideContacts/SideContacts';
 import SideHead from 'Elements/SideHead/SideHead';
+import { useEffect, useState } from 'react';
 
 // Styles
 import globalStyle from '../../styles/global/global.module.scss';
@@ -21,22 +22,36 @@ const Sidebar = ({
   searchMes,
   setSearchMes,
   showMenu,
-  setShowMenu
+  setShowMenu,
+  click
 }) => {
+  const sideBarStyles = showMenu
+    ? classNames(styles.showSideBar, styles.Sidebar)
+    : click ?classNames(styles.Sidebar, 'animate__animated animate__shakeX') : styles.Sidebar;
 
-const sideBarStyles = showMenu ? classNames(styles.showSideBar, styles.Sidebar) : styles.Sidebar
-const sideBarContetnStyles = showMenu ? styles.showSideBarContetn : styles.sideBarContent
-const burgerStyle = showMenu ? styles.closeBurger : styles.burger
+
+  const sideBarContetnStyles = showMenu
+    ? styles.showSideBarContetn
+    : styles.sideBarContent;
+
+
+  const burgerStyle = showMenu ? styles.closeBurger : styles.burger;
 
   return (
     // Sidebar
 
     <div className={sideBarStyles}>
-      <button className={burgerStyle} onClick={()=> setShowMenu(!showMenu)} >
-      <Icon name={'#icon-menu'}/>
+      <button className={burgerStyle} onClick={() => setShowMenu(!showMenu)}>
+        <Icon name={'#icon-menu'} />
       </button>
       <div className={sideBarContetnStyles}>
-        <SideHead searchQuery={searchQuery} setSearchQuery={setSearchQuery} searchMes={searchMes} setSearchMes={setSearchMes} />
+        <SideHead
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          searchMes={searchMes}
+          setSearchMes={setSearchMes}
+        />
+
         <SideContacts
           users={users}
           setOpenUserChat={setOpenUserChat}

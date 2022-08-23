@@ -10,20 +10,23 @@ import globalStyle from '../styles/global/global.module.scss';
 import styles from './Messanger.module.scss';
 
 function Messanger() {
+  // all users
   const [users, setUsers] = useState([]);
-
+  // take info about one user
   const [userChatInfo, setUserChatInfo] = useState(null);
-
+  // Search user by name
   const [searchQuery, setSearchQuery] = useState('');
-
+  // Search user by message
   const [searchMes, setSearchMes] = useState('');
-
+  // Show sidebar on small screen
   const [showMenu, setShowMenu] = useState(false);
-
+  // Shake sidebar on big screen
+  const [click, setClick] =useState(false)
+  // Open user chat
   const [openUserChat, setOpenUserChat] = useState(false);
-
+  // Only for stop first load  useEffect
   const [firstRender, setFirstRender] = useState(false);
-
+  // Take one user ID
   const [userId, setUserId] = useState(0);
 
   useEffect(() => {
@@ -62,7 +65,7 @@ function Messanger() {
 
   const sortUsersMessage = useMemo(() => {
     return sortUser.filter((user) =>
-      user.messages.find((useMes) =>
+      user.messages.find((useMes) => 
         useMes.text.toLowerCase().includes(searchMes)
       )
     );
@@ -80,6 +83,7 @@ function Messanger() {
         setSearchMes={setSearchMes}
         showMenu={showMenu}
         setShowMenu={setShowMenu}
+        click={click}
       />
       {openUserChat ? (
         <Chat
@@ -93,7 +97,7 @@ function Messanger() {
           users={users}
         />
       ) : (
-        <Chat />
+        <Chat setShowMenu={setShowMenu} setClick={setClick} />
       )}
     </div>
   );

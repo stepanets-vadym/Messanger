@@ -2,10 +2,18 @@
 @import '../../styles/media';
 @import '../../styles/mixins';
 
-.Chat{
-  flex-direction: column;
+.ChatWindow{
+  position: relative;
   display: flex;
   flex-grow: 1;
   height: 100%;
+}
 
+
+.Chat{
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
 }

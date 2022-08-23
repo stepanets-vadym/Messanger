@@ -7,6 +7,7 @@ import MeAndSnow from 'assets/img/MeAndSnow.jpeg';
 // Styles
 import globalStyle from '../../styles/global/global.module.scss';
 import styles from './ChatContent.module.scss';
+import classNames from 'classnames';
 
 // Intertfases
 
@@ -33,7 +34,7 @@ const ChatContent = ({ userChatInfo }) => {
           ) : (
             <div className={styles.answear} key={message.id}>
               <div className={styles.content}>
-                <div className={styles.messageText}>{message.text}</div>
+                <div className={classNames(styles.messageText, styles.answearText)}>{message.text}</div>
                 <div className={styles.answearDate}>{message.date}</div>
               </div>
             </div>

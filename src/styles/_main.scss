@@ -80,7 +80,10 @@ input {
 // @include media('<=tablet') {
 //   width: 300px;
 // }
-// ! Boostrap
-// @include media-breakpoint-down(sm) {
-//   width: 300px;
-// }
+
+
+.animate__animated.animate__bounce {
+  --animate-duration: .5s;
+}
+
+

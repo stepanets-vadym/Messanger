@@ -23,7 +23,6 @@
 }
 
 .content {
-  
   flex-direction: column;
   width: fit-content;
   max-width: 460px;
@@ -31,7 +30,8 @@
 }
 
 .messageText {
-  background-color: $c-Cultured;
+  background-color: $c-darkBlue;
+  color: $c-white;
   margin-bottom: 10px;
   border-radius: 25px;
   width: fit-content;
@@ -43,10 +43,9 @@
   @include flexCenter;
   margin-right: 20px;
   max-width: 50px;
-  padding: 20px 0 ;
+  padding: 20px 0;
   @include media('<=phone') {
     margin-right: 5px;
-
   }
 }
 
@@ -54,19 +53,21 @@
   border-radius: 50%;
 }
 
-
-.date{
-
+.date {
   padding: 0 20px;
 }
 
-.answear{
+.answear {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
-
 }
 
-.answearDate{
+.answearText {
+  background-color: $c-Cultured;
+  color: $c-black;
+}
+
+.answearDate {
   align-self: flex-end;
 }

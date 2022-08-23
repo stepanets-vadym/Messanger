@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+@import '../../styles/mixins';
+
+
+.ChatPlaceholder{
+  @include flexCenter;
+  height: 100%;
+  width: 100%;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.textOnLowScreen{
+  border: 2px solid $c-black;
+  transition: $t-normal;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  display: none;
+
+  @include media('<=desktop') {
+    display: block;
+  }
+
+  &:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 1px 4px 16px 6px rgba($c-black, .5);
+  }
+
+}
+
+
+.textOnBigScreen{
+
+  @include media('>=desktop') {
+    display: block;
+  }
+
+  @include media('<=desktop') {
+    display: none;
+  }
+
+}
