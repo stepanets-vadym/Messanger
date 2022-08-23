@@ -34,16 +34,13 @@ const Sidebar = ({
     ? styles.showSideBarContetn
     : styles.sideBarContent;
 
+    console.log(showMenu);
 
-  const burgerStyle = showMenu ? styles.closeBurger : styles.burger;
 
   return (
     // Sidebar
 
     <div className={sideBarStyles}>
-      <button className={burgerStyle} onClick={() => setShowMenu(!showMenu)}>
-        <Icon name={'#icon-menu'} />
-      </button>
       <div className={sideBarContetnStyles}>
         <SideHead
           searchQuery={searchQuery}

@@ -30,8 +30,8 @@ const Chat = ({
     <div className={styles.ChatWindow}>
       {userChatInfo ? (
         <div className={styles.Chat} onClick={() => setShowMenu(false)} >
-          <ChatHead userChatInfo={userChatInfo} />
-          <ChatContent userChatInfo={userChatInfo} />
+          <ChatHead userChatInfo={userChatInfo} setShowMenu={setShowMenu} />
+          <ChatContent userChatInfo={userChatInfo} users={users} />
           <ChatFooter
             userChatInfo={userChatInfo}
             setUserChatInfo={(data)=> {

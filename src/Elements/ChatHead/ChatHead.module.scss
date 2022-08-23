@@ -24,3 +24,14 @@
 .name{
   font-size: $fs-24 + px;
 }
+
+.exit{
+  background: transparent;
+  font-size: $fs-24 + px;
+  @include flexCenter;
+  margin-right: 15px;
+  color: $c-black;
+  border: none;
+  padding: 5px;
+
+}

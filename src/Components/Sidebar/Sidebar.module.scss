@@ -8,15 +8,15 @@
   width: 500px;
   height: 100%;
   @include media('<=desktop') {
-    width: 50px;
-    padding-right:3px;
-    padding-left:3px;
+    display: none;
   }
 }
 
 .showSideBar {
   background-color: $c-white;
+  transition: $t-normal;
   position: absolute;
+  display: block;
   width: 500px;
   z-index: 2;
   
@@ -37,20 +37,4 @@
 
 .showSideBarContetn {
   display: block;
-}
-
-.burger {
-  transition: $t-normal;
-  color: $c-black;
-  display: none;
-
-  @include media('<=desktop') {
-    @include flexCenter;
-    font-size: 34px;
-    margin: 20px auto 0 auto;
-  }
-}
-
-.closeBurger {
-  display: none;
 }

@@ -8,13 +8,23 @@ import MeAndSnow from 'assets/img/MeAndSnow.jpeg';
 import globalStyle from '../../styles/global/global.module.scss';
 import styles from './ChatContent.module.scss';
 import classNames from 'classnames';
+import { useEffect } from 'react';
 
 // Intertfases
 
-const ChatContent = ({ userChatInfo }) => {
+const ChatContent = ({ userChatInfo, users }) => {
+  const scrolBottom = () => {
+    const element = document.getElementById('box');
+
+    element.scrollTop = element.scrollHeight;
+  };
+
+  useEffect(() => {
+    scrolBottom();
+  }, [users]);
   return (
     // ChatContent
-    <div className={styles.ChatContent}>
+    <div className={styles.ChatContent} id='box'>
       <div className={styles.wrapper}>
         {userChatInfo.messages.map((message) =>
           message.type === 'mes' ? (
@@ -34,7 +44,11 @@ const ChatContent = ({ userChatInfo }) => {
           ) : (
             <div className={styles.answear} key={message.id}>
               <div className={styles.content}>
-                <div className={classNames(styles.messageText, styles.answearText)}>{message.text}</div>
+                <div
+                  className={classNames(styles.messageText, styles.answearText)}
+                >
+                  {message.text}
+                </div>
                 <div className={styles.answearDate}>{message.date}</div>
               </div>
             </div>
